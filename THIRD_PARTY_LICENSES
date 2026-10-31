@@ -1,0 +1,105 @@
+# Third-party licenses
+
+Clackwise itself is MIT-licensed (see `LICENSE`). It bundles sound recordings and adapts some code from the
+MIT-licensed projects below; their license texts are reproduced in full. Projects that only served as
+references, and that are not included, are listed at the end.
+
+## Sound packs: kbsim (MIT)
+
+`Resources/SoundPacks/kbsim-*` (12 packs: mxbrown, mxblack, mxblue, cream, boxnavy, blackink, redink,
+turquoise, alpaca, topre, bluealps, buckling): press and release recordings from
+https://github.com/tplai/kbsim (`src/assets/audio/<switch>/`) at commit
+ba103f3b0afa9dab80447aa2e7e2ed80b6bd80e4, audio files unmodified (`scripts/fetch_packs.sh`). The
+`config.json` and `README.md` of each pack are written by Clackwise. kbsim does not document individual
+recordists; the audio is distributed under the repository's MIT license.
+
+Copyright (c) Thomas Lai
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+## Sound pack: Holy Pandas (MIT)
+
+`Resources/SoundPacks/holy-pandas`: © Thomas Lai, from https://github.com/tplai/kbsim (the same files
+Mechvibes carries). It ships with its own license file, identical to the kbsim text above.
+
+## Sound packs: Mechvibes (MIT)
+
+`Resources/SoundPacks/` `cherrymx-blue-pbt`, `cherrymx-brown-pbt`, `topre-purple-hybrid-pbt`, `eg-oreo`
+and the Holy Pandas config: from https://github.com/hainguyents13/mechvibes at commit
+326252a13e7bef4f1c35d08ef0189b5af6f8ba02, files unmodified. The repository does not document the
+individual recordists of the v1 packs; they are distributed under the repository's MIT license.
+
+MIT License
+
+Copyright (c) 2021 Hai Nguyen
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+## Derived audio
+
+The velocity layers (soft / hard) and the synthesized key-up sounds of the packs without release
+recordings are computed at load time from the recordings above. Nothing derived is stored or
+distributed separately.
+
+## Clacky (MIT): adapted code
+
+The Mechvibes config parsing, the pack model and the macOS keycode to Mechvibes scancode table in
+`Sources/ClackwiseCore/SoundPack.swift` are adapted from https://github.com/jasonzh0/Clacky
+(`Clacky/Core/SoundPack.swift`, `SoundPackLoader.swift`, `KeycodeMap.swift`). Clackwise's audio engine
+is new.
+
+MIT License
+
+Copyright (c) 2026 Clacky contributors
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+## References (no code or assets included)
+
+These projects are not part of Clackwise: no code, resources or assets from them are copied or adapted.
+Clackwise reads the motion sensor with its own code, written from facts about the interface (the SPU
+driver's property names, the vendor usage page and usage of the accelerometer, the 22-byte report layout
+and its fixed-point scale), which these projects documented. They are listed to credit that research.
+
+- https://github.com/olvvier/apple-silicon-accelerometer: MIT, © 2026 olvvier. Documents how to read the
+  accelerometer on the Apple Silicon sensor processing unit.
+- https://github.com/posthog/meepslap: no license file and no license grant (its README says "MIT" but
+  names no copyright holder). Its accelerometer reader is credited there to
+  https://github.com/AbdullahFID/MacSlapApp, which has no license either. Neither is used as a source of
+  code.

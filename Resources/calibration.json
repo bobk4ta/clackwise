@@ -1,0 +1,34 @@
+{
+  "instant" : {
+    "hardG" : 0.075,
+    "normalG" : 0.012,
+    "normalSpread" : 1.2,
+    "softG" : 0.0067
+  },
+  "peak" : {
+    "hardG" : 0.12,
+    "normalG" : 0.018,
+    "normalSpread" : 1.2,
+    "softG" : 0.016
+  },
+  "source" : "Clackwise defaults 1",
+  "v2" : {
+    "instant" : {
+      "hardG" : 0.075,
+      "normalG" : 0.035,
+      "normalSpread" : 1.9,
+      "softG" : 0.011
+    },
+    "keyOffsets" : {
+
+    },
+    "peak" : {
+      "hardG" : 0.086,
+      "normalG" : 0.038,
+      "normalSpread" : 2.0,
+      "softG" : 0.012
+    },
+    "presses" : 0,
+    "source" : "Clackwise defaults 1"
+  }
+}

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleIdentifier</key>
+	<string>io.github.bobk4ta.clackwise</string>
+	<key>CFBundleName</key>
+	<string>Clackwise</string>
+	<key>CFBundleDisplayName</key>
+	<string>Clackwise</string>
+	<key>CFBundleExecutable</key>
+	<string>Clackwise</string>
+	<key>CFBundleIconFile</key>
+	<string>AppIcon</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0.0</string>
+	<key>CFBundleVersion</key>
+	<string>BUILD_NUMBER</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>LSMinimumSystemVersion</key>
+	<string>14.0</string>
+	<key>LSUIElement</key>
+	<true/>
+	<key>NSHighResolutionCapable</key>
+	<true/>
+	<key>NSHumanReadableCopyright</key>
+	<string>© 2026 Borislav Georgiev. MIT License. Bundled sound packs: kbsim and Holy Pandas by Thomas Lai (MIT), Mechvibes (MIT); see Third-party licenses in About.</string>
+</dict>
+</plist>

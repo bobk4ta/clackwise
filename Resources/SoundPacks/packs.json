@@ -1,0 +1,21 @@
+{
+  "packs": [
+    { "dir": "kbsim-mxblack", "name": "Cherry MX Black — deep", "type": "linear", "color": "#2C2C30" },
+    { "dir": "kbsim-blackink", "name": "Gateron Black Ink — smooth", "type": "linear", "color": "#4A4C57" },
+    { "dir": "kbsim-redink", "name": "Gateron Red Ink — light", "type": "linear", "color": "#D2373F" },
+    { "dir": "kbsim-cream", "name": "NovelKeys Cream — mellow", "type": "linear", "color": "#EADFC2" },
+    { "dir": "kbsim-alpaca", "name": "Alpaca — soft", "type": "linear", "color": "#E9A6C6" },
+    { "dir": "kbsim-turquoise", "name": "Turquoise Tealio — bright", "type": "linear", "color": "#36B5AC" },
+    { "dir": "kbsim-mxbrown", "name": "Cherry MX Brown — rounded", "type": "tactile", "color": "#8A5A3C" },
+    { "dir": "holy-pandas", "name": "Holy Panda — punchy", "type": "tactile", "color": "#F0B23E" },
+    { "dir": "kbsim-mxblue", "name": "Cherry MX Blue — snappy", "type": "clicky", "color": "#2F6FD6" },
+    { "dir": "kbsim-boxnavy", "name": "Kailh Box Navy — loud", "type": "clicky", "color": "#2B3A67" },
+    { "dir": "kbsim-bluealps", "name": "SKCM Blue Alps — crisp", "type": "clicky", "color": "#5A8FD8" },
+    { "dir": "kbsim-topre", "name": "Topre — thocky", "type": "other", "color": "#B9B4AA" },
+    { "dir": "kbsim-buckling", "name": "IBM Buckling Spring — vintage", "type": "other", "color": "#CFC6B2" },
+    { "dir": "cherrymx-brown-pbt", "name": "Cherry MX Brown — warm", "type": "tactile", "color": "#8A5A3C", "classic": true },
+    { "dir": "cherrymx-blue-pbt", "name": "Cherry MX Blue — sharp", "type": "clicky", "color": "#2F6FD6", "classic": true },
+    { "dir": "topre-purple-hybrid-pbt", "name": "Topre Purple Hybrid — muted", "type": "other", "color": "#7D5BA6", "classic": true },
+    { "dir": "eg-oreo", "name": "Everglide Oreo — bassy", "type": "tactile", "color": "#3A3536", "classic": true }
+  ]
+}

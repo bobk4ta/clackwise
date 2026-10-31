@@ -1,0 +1,51 @@
+# Build outputs
+.build/
+build/
+dist/
+*.app
+*.zip
+*.dmg
+*.xcodeproj/
+.swiftpm/
+DerivedData/
+
+# Recorded sessions, stats and logs (typing-derived, stay on the machine)
+data/
+stats.json
+adaptation.json
+samples.csv
+events.csv
+keys.csv
+*.log
+
+# Reference projects cloned for study
+refs/
+
+# Private working notes
+NOTES.md
+
+# Code signing: keychain, certificate, keys, passwords, machine-specific config
+*.keychain
+*.keychain-db
+*.p12
+*.pfx
+*.pem
+*.key
+*.cer
+*.crt
+*.csr
+*.mobileprovision
+signing/
+keychain-password
+scripts/local.env
+.env
+.env.*
+
+# macOS / editors
+.DS_Store
+.idea/
+.vscode/
+
+# Claude Code local state
+.claude/
+.build-x86/
